@@ -1,4 +1,4 @@
-# PhenoAI: Deep Learning Framework for Close-Range Time-Lapse PhenoCam Data
+# PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data
 
 <div align="center">
 
@@ -11,13 +11,19 @@
 
 </div>
 
+<div align="center">
+  <a href="https://drive.google.com/file/d/1YurEayp5iRPKrcKRpcQQ2g5uLIP-2G7x/preview" target="_blank">
+    <img src="https://via.placeholder.com/640x360.png?text=Click+to+Preview+PhenoAI+Demo" alt="PhenoAI Demo Video" width="70%" />
+  </a>
+</div>
+
 ## 🌿 Overview
 
 PhenoAI is a state-of-the-art deep learning framework designed for automated phenological analysis of vegetation from close-range time-lapse PhenoCam data. This framework implements cutting-edge computer vision techniques to provide comprehensive vegetation monitoring, segmentation, and temporal analysis capabilities.
 
 > **Research Publication**: This work is part of the research paper:  
-> **"PhenoAI: A Deep Learning-Based Framework for Close-Range Time-Lapse PhenoCam Data"**  
-> *by Akash Kumar*  
+> **"PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data"**  
+> *by Akash Kumar, Siddhartha Khare, and Sergio Rossi*  
 > Published in **Ecological Informatics, 2025**
 
 ### 🎯 Key Features
@@ -35,8 +41,13 @@ PhenoAI is a state-of-the-art deep learning framework designed for automated phe
 ### Installation
 
 ```bash
-# Clone the repository
+For Local Repository
+
+Download the .zip from releases (recommended)
+#Alternatively,
+# Clone the repository (But have to move the trained segmented model in model/[you trained segmented model] folder manually) 
 git clone https://github.com/your-username/phenoAI.git
+
 cd phenoAI
 
 # Install dependencies
@@ -51,6 +62,7 @@ pip install -e .
 ```bash
 # Launch interactive mode
 python -m phenoAI.cli --interactive
+(Recommended) --> user-friendly command line design
 
 # Or use the installed command
 phenoai --interactive
@@ -478,14 +490,21 @@ python -m pytest tests/
 
 If you use PhenoAI in your research, please cite our paper:
 
+```APA
+Kumar, A., Khare, S., & Rossi, S. (2025). PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data. Ecological Informatics, 88, 103134. https://doi.org/10.1016/j.ecoinf.2025.103134
+
 ```bibtex
-@article{kumar2025phenoai,
-    title={PhenoAI: A Deep Learning-Based Framework for Close-Range Time-Lapse PhenoCam Data},
-    author={Kumar, Akash},
-    journal={Ecological Informatics},
-    year={2025},
-    publisher={Elsevier},
-    doi={10.1016/j.ecoinf.2025.xxxxx}
+@article{KUMAR2025103134,
+title = {PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data},
+journal = {Ecological Informatics},
+volume = {88},
+pages = {103134},
+year = {2025},
+issn = {1574-9541},
+doi = {https://doi.org/10.1016/j.ecoinf.2025.103134},
+url = {https://www.sciencedirect.com/science/article/pii/S1574954125001438},
+author = {Akash Kumar and Siddhartha Khare and Sergio Rossi},
+keywords = {Close-range Remote Sensing, GCC, Forest Phenology, PhenoCam, Python, Deep Learning}
 }
 ```
 
@@ -493,7 +512,7 @@ If you use PhenoAI in your research, please cite our paper:
 
 - **Issues**: [GitHub Issues](https://github.com/your-username/phenoAI/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-username/phenoAI/discussions)
-- **Email**: [akash.kumar@example.com](mailto:akash.kumar@example.com)
+- **Email**: [akash_k@ce.iitr.ac.in](mailto:akash_k@ce.iitr.ac.in), [siddhartha.khare@ce.iitr.ac.in](mailto:siddhartha.khare@ce.iitr.ac.in)
 
 ## 📋 License
 
@@ -512,9 +531,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **PhenoAI v1.2.0** - Advancing Phenological Research with Deep Learning
 
-*Developed by Akash Kumar | Published in Ecological Informatics 2025*
+*Developed by Akash Kumar, Siddhartha Khare and Sergio Rossi | Published in Ecological Informatics 2025*
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/phenoAI.svg?style=social&label=Star)](https://github.com/your-username/phenoAI)
-[![GitHub forks](https://img.shields.io/github/forks/your-username/phenoAI.svg?style=social&label=Fork)](https://github.com/your-username/phenoAI/fork)
+[![GitHub stars](https://img.shields.io/github/stars/kharesiddhartha/phenoAI.svg?style=social&label=Star)](https://github.com/kharesiddhartha/phenoAI)
+[![GitHub forks](https://img.shields.io/github/forks/kharesiddhartha/phenoAI.svg?style=social&label=Fork)](https://github.com/kharesiddhartha/phenoAI/fork)
 
 </div>
