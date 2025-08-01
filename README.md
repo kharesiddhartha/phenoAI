@@ -38,7 +38,7 @@ PhenoAI is a state-of-the-art deep learning framework designed for automated phe
 For Local Repository
 
 Download the .zip from releases (recommended)
-Alternatively,
+#Alternatively,
 # Clone the repository (But have to move the trained segmented model in model/[you trained segmented model] folder manually) 
 git clone https://github.com/your-username/phenoAI.git
 
@@ -484,6 +484,9 @@ python -m pytest tests/
 
 If you use PhenoAI in your research, please cite our paper:
 
+```APA
+Kumar, A., Khare, S., & Rossi, S. (2025). PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data. Ecological Informatics, 88, 103134. https://doi.org/10.1016/j.ecoinf.2025.103134
+
 ```bibtex
 @article{KUMAR2025103134,
 title = {PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data},
@@ -495,8 +498,7 @@ issn = {1574-9541},
 doi = {https://doi.org/10.1016/j.ecoinf.2025.103134},
 url = {https://www.sciencedirect.com/science/article/pii/S1574954125001438},
 author = {Akash Kumar and Siddhartha Khare and Sergio Rossi},
-keywords = {Close-range Remote Sensing, GCC, Forest Phenology, PhenoCam, Python, Deep Learning},
-abstract = {Close-range digital repeat photography is a powerful technique for studying phenology and the seasonal dynamics of plants. However, the processing of PhenoCam images is time-consuming and requires substantial human expertise. This paper describes PhenoAI, a Python framework that automates the processing of time-series PhenoCam images. The package consists of four modules: (i) image quality control, (ii) vegetation segmentation using deep learning, (iii) greenness index calculation, and (iv) parameter extraction. These modules are consistent with the standard and established methodologies used in the literature. We demonstrate the application of the PhenoAI package in a case study by analyzing black spruce [Picea mariana (Mill.) B.S.P.] phenology in Quebec, Canada, over five years (2017–2021). The result revealed that the Start of Season (SOS) of Green Chromatic Coordinate (GCC) occurred in the third week of May (DOY 144 ± 5), End of Season (EOS) occurred in the end of September (DOY 269 ± 20) and day of maximum greenness occurred in the first week of July (DOY 183 ± 5). The findings correlate with the previous studies in the same region and species, confirming the ability of the PhenoAI to replicate field observations accurately. PhenoAI is an open-source software package that can be customized to suit specific research needs, reduces significantly the processing time, and simplifies the workflow, making it accessible for use by new users for close range observations taken by PhenoCam. PhenoAI will enhance efficiency and accuracy of data extraction for scientists using phenological data for ecological and forestry research.}
+keywords = {Close-range Remote Sensing, GCC, Forest Phenology, PhenoCam, Python, Deep Learning}
 }
 ```
 
@@ -525,7 +527,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Developed by Akash Kumar, Siddhartha Khare and Sergio Rossi | Published in Ecological Informatics 2025*
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/phenoAI.svg?style=social&label=Star)](https://github.com/your-username/phenoAI)
-[![GitHub forks](https://img.shields.io/github/forks/your-username/phenoAI.svg?style=social&label=Fork)](https://github.com/your-username/phenoAI/fork)
+[![GitHub stars](https://img.shields.io/github/stars/kharesiddhartha/phenoAI.svg?style=social&label=Star)](https://github.com/kharesiddhartha/phenoAI)
+[![GitHub forks](https://img.shields.io/github/forks/kharesiddhartha/phenoAI.svg?style=social&label=Fork)](https://github.com/kharesiddhartha/phenoAI/fork)
 
 </div>
