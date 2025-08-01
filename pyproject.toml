@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phenoai"
+version = "1.2.0"
+authors = [
+    {name = "PhenoAI Development Team", email = "phenoai@example.com"},
+]
+description = "Automated Phenological Analysis Package for PhenoCam Data"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+keywords = ["phenology", "computer vision", "image analysis", "vegetation indices", "remote sensing"]
+dependencies = [
+    "numpy>=1.19.0",
+    "scipy>=1.7.0",
+    "opencv-python>=4.5.0",
+    "pillow>=8.0.0",
+    "matplotlib>=3.3.0",
+    "plotly>=5.0.0",
+    "pandas>=1.3.0",
+    "pyyaml>=5.4.0",
+    "scikit-learn>=1.0.0",
+    "scikit-image>=0.18.0",
+    "tqdm>=4.60.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.10.0",
+    "flake8>=3.8.0",
+    "black>=21.0.0",
+]
+docs = [
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme>=0.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/username/phenoai"
+"Bug Reports" = "https://github.com/username/phenoai/issues"
+"Source" = "https://github.com/username/phenoai"
+"Documentation" = "https://phenoai.readthedocs.io/"
+
+[project.scripts]
+phenoai = "phenoAI.cli:main"
+phenoai-comprehensive = "phenoAI.cli_comprehensive:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["phenoAI*"]
+
+[tool.setuptools.package-data]
+phenoAI = ["*.yaml", "*.json"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "--strict-markers --disable-warnings"
