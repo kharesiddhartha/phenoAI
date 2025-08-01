@@ -11,6 +11,12 @@
 
 </div>
 
+<div align="center">
+  <a href="https://drive.google.com/file/d/1YurEayp5iRPKrcKRpcQQ2g5uLIP-2G7x/preview" target="_blank">
+    <img src="https://via.placeholder.com/640x360.png?text=Click+to+Preview+PhenoAI+Demo" alt="PhenoAI Demo Video" width="70%" />
+  </a>
+</div>
+
 ## 🌿 Overview
 
 PhenoAI is a state-of-the-art deep learning framework designed for automated phenological analysis of vegetation from close-range time-lapse PhenoCam data. This framework implements cutting-edge computer vision techniques to provide comprehensive vegetation monitoring, segmentation, and temporal analysis capabilities.
