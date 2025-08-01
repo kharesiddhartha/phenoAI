@@ -1,4 +1,4 @@
-# PhenoAI: Deep Learning Framework for Close-Range Time-Lapse PhenoCam Data
+# PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data
 
 <div align="center">
 
@@ -16,8 +16,8 @@
 PhenoAI is a state-of-the-art deep learning framework designed for automated phenological analysis of vegetation from close-range time-lapse PhenoCam data. This framework implements cutting-edge computer vision techniques to provide comprehensive vegetation monitoring, segmentation, and temporal analysis capabilities.
 
 > **Research Publication**: This work is part of the research paper:  
-> **"PhenoAI: A Deep Learning-Based Framework for Close-Range Time-Lapse PhenoCam Data"**  
-> *by Akash Kumar*  
+> **"PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data"**  
+> *by Akash Kumar, Siddhartha Khare, and Sergio Rossi*  
 > Published in **Ecological Informatics, 2025**
 
 ### 🎯 Key Features
@@ -35,8 +35,13 @@ PhenoAI is a state-of-the-art deep learning framework designed for automated phe
 ### Installation
 
 ```bash
-# Clone the repository
+For Local Repository
+
+Download the .zip from releases (recommended)
+Alternatively,
+# Clone the repository (But have to move the trained segmented model in model/[you trained segmented model] folder manually) 
 git clone https://github.com/your-username/phenoAI.git
+
 cd phenoAI
 
 # Install dependencies
@@ -51,6 +56,7 @@ pip install -e .
 ```bash
 # Launch interactive mode
 python -m phenoAI.cli --interactive
+(Recommended) --> user-friendly command line design
 
 # Or use the installed command
 phenoai --interactive
@@ -479,13 +485,18 @@ python -m pytest tests/
 If you use PhenoAI in your research, please cite our paper:
 
 ```bibtex
-@article{kumar2025phenoai,
-    title={PhenoAI: A Deep Learning-Based Framework for Close-Range Time-Lapse PhenoCam Data},
-    author={Kumar, Akash},
-    journal={Ecological Informatics},
-    year={2025},
-    publisher={Elsevier},
-    doi={10.1016/j.ecoinf.2025.xxxxx}
+@article{KUMAR2025103134,
+title = {PhenoAI: A deep learning Python framework to process close-range time-lapse PhenoCam data},
+journal = {Ecological Informatics},
+volume = {88},
+pages = {103134},
+year = {2025},
+issn = {1574-9541},
+doi = {https://doi.org/10.1016/j.ecoinf.2025.103134},
+url = {https://www.sciencedirect.com/science/article/pii/S1574954125001438},
+author = {Akash Kumar and Siddhartha Khare and Sergio Rossi},
+keywords = {Close-range Remote Sensing, GCC, Forest Phenology, PhenoCam, Python, Deep Learning},
+abstract = {Close-range digital repeat photography is a powerful technique for studying phenology and the seasonal dynamics of plants. However, the processing of PhenoCam images is time-consuming and requires substantial human expertise. This paper describes PhenoAI, a Python framework that automates the processing of time-series PhenoCam images. The package consists of four modules: (i) image quality control, (ii) vegetation segmentation using deep learning, (iii) greenness index calculation, and (iv) parameter extraction. These modules are consistent with the standard and established methodologies used in the literature. We demonstrate the application of the PhenoAI package in a case study by analyzing black spruce [Picea mariana (Mill.) B.S.P.] phenology in Quebec, Canada, over five years (2017–2021). The result revealed that the Start of Season (SOS) of Green Chromatic Coordinate (GCC) occurred in the third week of May (DOY 144 ± 5), End of Season (EOS) occurred in the end of September (DOY 269 ± 20) and day of maximum greenness occurred in the first week of July (DOY 183 ± 5). The findings correlate with the previous studies in the same region and species, confirming the ability of the PhenoAI to replicate field observations accurately. PhenoAI is an open-source software package that can be customized to suit specific research needs, reduces significantly the processing time, and simplifies the workflow, making it accessible for use by new users for close range observations taken by PhenoCam. PhenoAI will enhance efficiency and accuracy of data extraction for scientists using phenological data for ecological and forestry research.}
 }
 ```
 
@@ -493,7 +504,7 @@ If you use PhenoAI in your research, please cite our paper:
 
 - **Issues**: [GitHub Issues](https://github.com/your-username/phenoAI/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-username/phenoAI/discussions)
-- **Email**: [akash.kumar@example.com](mailto:akash.kumar@example.com)
+- **Email**: [akash_k@ce.iitr.ac.in](mailto:akash_k@ce.iitr.ac.in), [siddhartha.khare@ce.iitr.ac.in](mailto:siddhartha.khare@ce.iitr.ac.in)
 
 ## 📋 License
 
@@ -512,7 +523,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **PhenoAI v1.2.0** - Advancing Phenological Research with Deep Learning
 
-*Developed by Akash Kumar | Published in Ecological Informatics 2025*
+*Developed by Akash Kumar, Siddhartha Khare and Sergio Rossi | Published in Ecological Informatics 2025*
 
 [![GitHub stars](https://img.shields.io/github/stars/your-username/phenoAI.svg?style=social&label=Star)](https://github.com/your-username/phenoAI)
 [![GitHub forks](https://img.shields.io/github/forks/your-username/phenoAI.svg?style=social&label=Fork)](https://github.com/your-username/phenoAI/fork)
