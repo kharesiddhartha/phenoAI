@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/Graphical_Abstract_updated.jpg" alt="PhenoAI Graphical Abstract" width="70%" />
+  <img src="https://raw.githubusercontent.com/kharesiddhartha/phenoAI/main/assets/Graphical_Abstract_updated.jpg" alt="PhenoAI Graphical Abstract" width="70%" />
 </div>
 
 ## 🌿 Overview

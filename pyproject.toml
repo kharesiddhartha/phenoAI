@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "phenoai-package"
-version = "1.2.0"
+version = "1.2.1"
 authors = [
     {name = "Akash Kumar", email = "akash_k@ce.iitr.ac.in"},
     {name = "Siddhartha Khare", email = "siddhartha.khare@ce.iitr.ac.in"},
