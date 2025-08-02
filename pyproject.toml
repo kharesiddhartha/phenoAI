@@ -6,7 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "phenoai"
 version = "1.2.0"
 authors = [
-    {name = "PhenoAI Development Team", email = "phenoai@example.com"},
+    {name = "Akash Kumar", email = "akash_k@ce.iitr.ac.in"},
+    {name = "Siddhartha Khare", email = "siddhartha.khare@ce.iitr.ac.in"},
+    {name = "Sergio Rossi", email = "sergio.rossi@uqac.ca"},
 ]
 description = "Automated Phenological Analysis Package for PhenoCam Data"
 readme = "README.md"
@@ -38,6 +40,8 @@ dependencies = [
     "scikit-learn>=1.0.0",
     "scikit-image>=0.18.0",
     "tqdm>=4.60.0",
+    "h5py>=3.0.0",
+    "openpyxl>=3.0.0",
 ]
 
 [project.optional-dependencies]
@@ -51,16 +55,21 @@ docs = [
     "sphinx>=4.0.0",
     "sphinx-rtd-theme>=0.5.0",
 ]
+tensorflow = [
+    "tensorflow>=2.8.0",
+]
+all = [
+    "tensorflow>=2.8.0",
+]
 
 [project.urls]
-Homepage = "https://github.com/username/phenoai"
-"Bug Reports" = "https://github.com/username/phenoai/issues"
-"Source" = "https://github.com/username/phenoai"
-"Documentation" = "https://phenoai.readthedocs.io/"
+Homepage = "https://github.com/kharesiddhartha/phenoAI"
+"Bug Reports" = "https://github.com/kharesiddhartha/phenoAI/issues"
+"Source" = "https://github.com/kharesiddhartha/phenoAI"
+"Documentation" = "https://github.com/kharesiddhartha/phenoAI#readme"
 
 [project.scripts]
 phenoai = "phenoAI.cli:main"
-phenoai-comprehensive = "phenoAI.cli_comprehensive:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
@@ -68,6 +77,7 @@ include = ["phenoAI*"]
 
 [tool.setuptools.package-data]
 phenoAI = ["*.yaml", "*.json"]
+"*" = ["Model/*.h5", "Model/*.pkl", "Model/*.pth", "assets/*.jpg", "assets/*.png"]
 
 [tool.black]
 line-length = 88

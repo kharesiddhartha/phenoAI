@@ -1,8 +1,14 @@
 include README.md
 include LICENSE
 include requirements.txt
+recursive-include Model *.h5
+recursive-include Model *.pkl
+recursive-include Model *.pth
+recursive-include assets *.jpg
+recursive-include assets *.png
 recursive-include phenoAI *.py
 recursive-include phenoAI *.json
+recursive-include phenoAI *.yaml
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 recursive-exclude * *.so

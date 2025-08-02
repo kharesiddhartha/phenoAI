@@ -39,31 +39,39 @@ PhenoAI is a deep learning framework designed to automate the processing chain o
 ### Installation
 
 ```bash
-#For Local Repository
+# Install from PyPI (recommended)
+pip install phenoai
 
-Download the .zip from releases (recommended)
-#Alternatively,
-# Clone the repository (But have to move the trained segmented model in model/[you trained segmented model] folder manually) 
-git clone https://github.com/your-username/phenoAI.git
+# Or install with TensorFlow support
+pip install phenoai[tensorflow]
 
+# Or install all optional dependencies
+pip install phenoai[all]
+```
+
+### Alternative Installation Methods
+
+```bash
+# From GitHub releases (if PyPI is not available)
+pip install https://github.com/kharesiddhartha/phenoAI/releases/download/v1.2.0/phenoai-1.2.0-py3-none-any.whl
+
+# For development
+git clone https://github.com/kharesiddhartha/phenoAI.git
 cd phenoAI
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install the package
 pip install -e .
 ```
 
 ### Basic Usage
 
 ```bash
-# Launch interactive mode
+# Launch interactive mode (recommended for beginners)
 python -m phenoAI.cli --interactive
-#(Recommended) --> user-friendly command line design
 
-# Or use the installed command
+# Or if installed globally
 phenoai --interactive
+
+# Direct usage with parameters
+python -m phenoAI.cli --input ./images --output ./results
 ```
 
 ## 📋 Detailed Usage Guide
