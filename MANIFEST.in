@@ -1,7 +1,8 @@
 include README.md
 include LICENSE
 include requirements.txt
-recursive-include Model *.h5
+# Model files excluded from PyPI due to size limits
+# recursive-include Model *.h5
 recursive-include Model *.pkl
 recursive-include Model *.pth
 recursive-include assets *.jpg

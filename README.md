@@ -40,14 +40,20 @@ PhenoAI is a deep learning framework designed to automate the processing chain o
 
 ```bash
 # Install from PyPI (recommended)
-pip install phenoai
+pip install phenoai-package
 
 # Or install with TensorFlow support
-pip install phenoai[tensorflow]
+pip install phenoai-package[tensorflow]
 
 # Or install all optional dependencies
-pip install phenoai[all]
+pip install phenoai-package[all]
 ```
+
+**📦 Model File Download:**
+Due to PyPI size limitations, the pre-trained model (355MB) is not included in the package. Download it separately:
+- **GitHub Release**: Download `Basic_Vegetation_Model.h5` from the latest release
+- **Direct Download**: Available in the GitHub repository under `/Model/` directory
+- **Alternative**: The framework will prompt you to download the model on first use
 
 ### Alternative Installation Methods
 
