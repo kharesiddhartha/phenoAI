@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/Graphical_Abstract_updated.jpg" alt="PhenoAI Banner" width="60%" />
+  <img src="assets/Graphical_Abstract_updated.jpg" alt="PhenoAI Banner" width="70%" />
 </div>
 
 ## 🌿 Overview
