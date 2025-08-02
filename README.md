@@ -39,7 +39,7 @@ PhenoAI is a state-of-the-art deep learning framework designed for automated phe
 ### Installation
 
 ```bash
-For Local Repository
+#For Local Repository
 
 Download the .zip from releases (recommended)
 #Alternatively,
@@ -60,7 +60,7 @@ pip install -e .
 ```bash
 # Launch interactive mode
 python -m phenoAI.cli --interactive
-(Recommended) --> user-friendly command line design
+#(Recommended) --> user-friendly command line design
 
 # Or use the installed command
 phenoai --interactive
@@ -508,8 +508,8 @@ keywords = {Close-range Remote Sensing, GCC, Forest Phenology, PhenoCam, Python,
 
 ## 📞 Support & Contact
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/phenoAI/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/phenoAI/discussions)
+- **Issues**: [GitHub Issues](https://github.com/kharesiddhartha/phenoAI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/kharesiddhartha/phenoAI/discussions)
 - **Email**: [akash_k@ce.iitr.ac.in](mailto:akash_k@ce.iitr.ac.in), [siddhartha.khare@ce.iitr.ac.in](mailto:siddhartha.khare@ce.iitr.ac.in)
 
 ## 📋 License
