@@ -29,7 +29,7 @@ PhenoAI is a deep learning framework designed to automate the processing chain o
 - **🔬 Advanced Image Quality Control**: Automated detection and filtering of low-quality images
 - **🌱 Vegetation Segmentation**: Deep learning-powered vegetation extraction using semantic segmentation
 - **📊 ROI Analysis**: K-means clustering-based Region of Interest (ROI) generation and analysis
-- **📈 Vegetation Indices**: Comprehensive calculation of multiple vegetation indices (NDVI, EVI, SAVI, etc.)
+- **📈 Vegetation Indices**: Comprehensive calculation of multiple vegetation indices (GCC, BCC, VCI, etc.)
 - **🖥️ Professional GUI**: Advanced parameter tuning interface with real-time preview
 - **⚡ Batch Processing**: Efficient processing of large-scale time-lapse datasets
 - **📋 Interactive CLI**: User-friendly command-line interface with guided workflows
@@ -179,13 +179,11 @@ analyzer.selected_rois = [0, 2, 4, 6]  # or use 'all'
 vi_results = analyzer.step4_vegetation_indices()
 
 # Available indices:
-# - NDVI (Normalized Difference Vegetation Index)
-# - EVI (Enhanced Vegetation Index)
-# - SAVI (Soil-Adjusted Vegetation Index)
-# - MSAVI (Modified SAVI)
-# - NDWI (Normalized Difference Water Index)
-# - CIG (Crop Index Green)
-# - VEG (Vegetation Index)
+# - GCC (Green Chromatic Coordinate)
+# - BCC (Blue Chromatic Coordinate)
+# - RCC (Red Chromatic Coordinate)
+# - ExG (Excess Green)
+# - VCI (Vegetation Contrast Index)
 ```
 
 ### 3. Advanced Parameter Tuning
@@ -288,8 +286,8 @@ Output/
 │   ├── roi_previews/           # Visual ROI overlays
 │   └── cluster_analysis/        # K-means clustering results
 ├── 05_vegetation_indices/       # Calculated indices
-│   ├── ndvi_results/           # NDVI time series
-│   ├── evi_results/            # EVI time series
+│   ├── gcc_results/           # GCC time series
+│   ├── exg_results/            # ExG time series
 │   └── comprehensive_indices/   # All indices combined
 └── reports/
     ├── summary_report.html      # Comprehensive analysis report
@@ -315,7 +313,7 @@ results = analyzer.run_full_workflow()
 # Access results
 print(f"Processed {len(results['high_quality_images'])} images")
 print(f"Generated {len(results['rois'])} ROIs")
-print(f"NDVI temporal trend: {results['vegetation_indices']['ndvi_trend']}")
+print(f"GCC temporal trend: {results['vegetation_indices']['gcc_trend']}")
 ```
 
 ### Workflow 2: Custom ROI Analysis
@@ -356,34 +354,6 @@ analyzer = PhenoAI()
 analyzer.load_parameters("optimized_params.json")
 analyzer.run_full_workflow()
 ```
-
-## 📈 Vegetation Indices Details
-
-PhenoAI calculates multiple vegetation indices for comprehensive analysis:
-
-### NDVI (Normalized Difference Vegetation Index)
-```
-NDVI = (NIR - Red) / (NIR + Red)
-```
-- **Range**: -1 to +1
-- **Use**: General vegetation health and density
-- **Interpretation**: Higher values indicate healthier vegetation
-
-### EVI (Enhanced Vegetation Index)
-```
-EVI = 2.5 * ((NIR - Red) / (NIR + 6*Red - 7.5*Blue + 1))
-```
-- **Range**: -1 to +1
-- **Use**: Improved sensitivity in high biomass areas
-- **Advantage**: Reduced atmospheric and soil background effects
-
-### SAVI (Soil-Adjusted Vegetation Index)
-```
-SAVI = ((NIR - Red) / (NIR + Red + L)) * (1 + L)
-```
-- **Range**: -1 to +1
-- **Use**: Areas with significant soil background
-- **Parameter**: L = 0.5 (soil brightness correction factor)
 
 ## 🔧 Troubleshooting
 
@@ -465,7 +435,7 @@ from phenoAI.utils import (
 # Calculate custom vegetation index
 custom_vi = calculate_vegetation_index(
     image_path="sample.jpg",
-    index_type="NDVI",
+    index_type="GCC",
     roi_coordinates=[(100, 100), (200, 200)]
 )
 ```
